@@ -12,7 +12,7 @@ This project provides an example of FM demodulation with AD9361, python and PYNQ
 - People interested in High-Level-Synthesis development on Xilinx Zynq devices
 - People interested in [PYNQ](http://www.pynq.io/) for agile hardware development and verification
 
-## 3) Hardware platform
+## 3) Hardware Platform
   * [ZedBoard](https://digilent.com/reference/programmable-logic/zedboard/start)
     * xc7z020, with abundant peripherals
   * [AD-FMCOMMS2-EBZ](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad-fmcomms2.html)
