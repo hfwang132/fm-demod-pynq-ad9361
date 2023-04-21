@@ -9,9 +9,7 @@ void fir_complex(hls::stream<pkt_cfdata_t>& out_stream, hls::stream<pkt_cfdata_t
 #pragma HLS INTERFACE axis port=in_stream
 
     static data_t shift_reg_i[N] = {0};
-#pragma HLS ARRAY_PARTITION variable=shift_reg_i dim=1 complete
     static data_t shift_reg_q[N] = {0};
-#pragma HLS ARRAY_PARTITION variable=shift_reg_q dim=1 complete
     data_t acc_i;
     data_t acc_q;
 
