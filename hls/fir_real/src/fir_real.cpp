@@ -9,7 +9,6 @@ void fir_real(hls::stream<pkt_fdata_t>& out_stream, hls::stream<pkt_fdata_t>& in
 #pragma HLS INTERFACE axis port=in_stream
 
     static data_t shift_reg[N] = {0};
-#pragma HLS ARRAY_PARTITION variable=shift_reg dim=1 complete
     data_t acc;
 
     int k;
@@ -17,7 +16,6 @@ void fir_real(hls::stream<pkt_fdata_t>& out_stream, hls::stream<pkt_fdata_t>& in
     pkt_fdata_t pkt;
 
     static data_t coef_buf[N] = {0};
-#pragma HLS ARRAY_PARTITION variable=coef_buf dim=1 complete
     if (load_coef) {
     	copy_coef:
     	for (k = 0; k < N; k ++) {
