@@ -18,7 +18,7 @@ void fir_complex(hls::stream<pkt_cfdata_t>& out_stream, hls::stream<pkt_cfdata_t
     pkt_cfdata_t pkt;
 
     static data_t coef_buf[N] = {0};
-#pragma HLS ARRAY_PARTITION variable=coef_buf dim=1 complete
+	
     if (load_coef) {
     	copy_coef:
     	for (k = 0; k < N; k ++) {
