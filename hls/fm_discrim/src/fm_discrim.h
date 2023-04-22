@@ -1,7 +1,9 @@
 #ifndef _FIR_DEMOD_H_
 #define _FIR_DEMOD_H_
 
-#include <gmp.h>
+#define DEBUG
+
+#include "/opt/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
 #define __gmp_const const
 
 #include "ap_int.h"
