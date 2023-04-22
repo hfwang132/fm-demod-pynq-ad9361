@@ -9,7 +9,7 @@ This project provides an example of FM demodulation with AD9361, python and PYNQ
 ## 2) Targeted Audience
 
 - People interested in controlling SDR devices with python
-- People interested in High-Level-Synthesis development on Xilinx Zynq devices
+- People interested in HLS development on Xilinx Zynq devices
 - People interested in [PYNQ](http://www.pynq.io/) for agile hardware development and verification
 
 ## 3) Hardware Platform
