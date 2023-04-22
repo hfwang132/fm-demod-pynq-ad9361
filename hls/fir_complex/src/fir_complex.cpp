@@ -27,16 +27,17 @@ void fir_complex(hls::stream<pkt_cfdata_t>& out_stream, hls::stream<pkt_cfdata_t
     }
 
     top_loop: while (1) {
+#pragma HLS LOOP_TRIPCOUNT avg=2400000 max=4800000 min=10	    
+#pragma HLS PIPELINE
 		TDL:
 		for (k = N - 1; k >= D; k --) {
-#pragma HLS PIPELINE
+
 			shift_reg_i[k] = shift_reg_i[k - D];
 			shift_reg_q[k] = shift_reg_q[k - D];
 		}
 
 		READ:
 		for (k = 0; k < D; k ++) {
-#pragma HLS PIPELINE
 			in_stream.read(pkt);
 			// float to fixed
 			pkt.data.i = (data_t) pkt.data.i;
@@ -50,7 +51,6 @@ void fir_complex(hls::stream<pkt_cfdata_t>& out_stream, hls::stream<pkt_cfdata_t
 
 		MAC:
 		for (k = N - 1; k >= 0; k--) {
-#pragma HLS PIPELINE
 			acc_i += shift_reg_i[k] * coef_buf[k];
 			acc_q += shift_reg_q[k] * coef_buf[k];
 		}
