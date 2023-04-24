@@ -1,5 +1,5 @@
-#ifndef _FIR_DEMOD_H_
-#define _FIR_DEMOD_H_
+#ifndef _FM_DISCRIM_H_
+#define _FM_DISCRIM_H_
 
 #define DEBUG
 
