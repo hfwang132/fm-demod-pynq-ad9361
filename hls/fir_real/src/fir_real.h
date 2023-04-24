@@ -1,5 +1,5 @@
-#ifndef _FIR_DEMOD_H_
-#define _FIR_DEMOD_H_
+#ifndef _FIR_REAL_H_
+#define _FIR_REAL_H_
 
 #include <gmp.h>
 #define __gmp_const const
