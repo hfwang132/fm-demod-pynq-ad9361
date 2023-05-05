@@ -3,7 +3,8 @@
 
 #define DEBUG
 
-https://support.xilinx.com/s/question/0D52E00006xoQLMSA2/using-apinth-in-my-design-causes-many-crtl-cosimulation-errors-mainly-in-mpfrh?language=en_US
+// This is to resolve a bug about cosimulation with arbitrary precision data types.
+// See https://support.xilinx.com/s/article/Use-of-gmp-h-for-Co-simulation?language=en_US
 #include <gmp.h>
 #define __gmp_const const
 
