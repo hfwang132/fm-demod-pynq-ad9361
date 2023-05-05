@@ -55,4 +55,4 @@ Note that the following codes are added at the header files:
 
 This is to resolve the cosimulation bug when using arbitrary precision data types. 
 
-Reference: https://support.xilinx.com/s/question/0D52E00006xoQLMSA2/using-apinth-in-my-design-causes-many-crtl-cosimulation-errors-mainly-in-mpfrh?language=en_US
+See https://support.xilinx.com/s/article/Use-of-gmp-h-for-Co-simulation?language=en_US
