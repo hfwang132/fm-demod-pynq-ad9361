@@ -3,7 +3,8 @@
 
 #define DEBUG
 
-#include "/opt/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+https://support.xilinx.com/s/question/0D52E00006xoQLMSA2/using-apinth-in-my-design-causes-many-crtl-cosimulation-errors-mainly-in-mpfrh?language=en_US
+#include <gmp.h>
 #define __gmp_const const
 
 #include "ap_int.h"
