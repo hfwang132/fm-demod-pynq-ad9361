@@ -2,6 +2,7 @@
 #define _FIR_REAL_H_
 
 // This is to resolve a bug about cosimulation with arbitrary precision data types.
+// This bug is only present with Vitis HLS 2021.x
 // See https://support.xilinx.com/s/article/Use-of-gmp-h-for-Co-simulation?language=en_US
 #include <gmp.h>
 #define __gmp_const const
