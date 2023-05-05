@@ -2,8 +2,9 @@
 #define _FIR_COMPLEX_H_
 
 // This is to resolve a bug regarding cosimulation with arbitrary precision data types.
-// See https://support.xilinx.com/s/question/0D52E00006xoQLMSA2/using-apinth-in-my-design-causes-many-crtl-cosimulation-errors-mainly-in-mpfrh?language=en_US
-#include "/opt/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+// This bug is only present with Vitis HLS 2021.x
+// See https://support.xilinx.com/s/article/Use-of-gmp-h-for-Co-simulation?language=en_US
+#include <gmp.h>
 #define __gmp_const const
 
 #include "ap_int.h"
