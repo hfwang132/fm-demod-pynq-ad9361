@@ -58,7 +58,7 @@ int tb_fir_complex()
 		in_stream.write(pkt_in);
 	}
 
-	std::cout << "Streaming in_stream to fir_real() ..." << std::endl;
+	std::cout << "Streaming in_stream to fir_complex() ..." << std::endl;
 
 	fcoef_t lpf_b[64] = {
 			-0.05709761, -0.02220113,  0.02486028,  0.07922919,  0.12968063,
