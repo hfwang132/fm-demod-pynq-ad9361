@@ -56,7 +56,7 @@ int tb_fm_discrim()
 		in_stream.write(pkt_in);
 	}
 
-	printf("Streaming in_stream to fir_real() ...\n");
+	printf("Streaming in_stream to fir_discrim() ...\n");
 
 	fm_discrim(out_stream, in_stream);
 
